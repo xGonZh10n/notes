@@ -5,24 +5,24 @@
 - 创建新的仓库
 
   首先需要创建一个工作目录`test`，然后在终端切换至该目录并输入：
-
-  ```ruby
-$ git init
-  ```
-
+  
+    ```ruby
+  $ git init
+    ```
+  
 - 克隆现有仓库
 
-  如果想获得一份Git仓库`test`的拷贝，可以在终端输入：
+  如果想获得一份`test`仓库的拷贝，可以在终端输入：
 
-  ```ruby
+    ```ruby
   $ git clone https://github.com/xGonZh10n/test.git
-  ```
+    ```
 
   或者
 
-  ```ruby
+    ```ruby
   $ git clone git@github.com:xGonZh10n/test.git
-  ```
+    ```
 
 ## 记录每次更新到仓库
 
@@ -33,7 +33,7 @@ $ git init
 
 初次创建或克隆某个仓库时，工作目录中的所有文件都属于已跟踪文件，并处于未修改状态。编辑某些文件后，Git会将它们标记为已修改文件。我们逐步将这些修改过的文件放入暂存区，然后提交所有暂存的修改，如此反复。所以，使用Git时文件的生命周期如下：
 
-![lifecycle](./images/Git_Basics/lifecycle.png)
+![](./images/Git_Basics/lifecycle.png)
 
 ### 查看文件状态
 
@@ -69,7 +69,7 @@ GitHub上有一个十分详细的针对数十种项目及语言的[.gitignore文
 
 - 查看尚未暂存的文件更新了哪些部分：
 
-  ```ruby
+    ```ruby
   $ git diff
   ```
 
@@ -77,7 +77,7 @@ GitHub上有一个十分详细的针对数十种项目及语言的[.gitignore文
 
 - 查看已暂存的将要添加到下次提交里的内容：
 
-  ```ruby
+    ```ruby
   $ git diff --cached
   ```
 
@@ -241,13 +241,13 @@ $ git show <tag-name>
 
 - 推送单个标签
 
-  ```ruby
+    ```ruby
   $ git push origin <tag-name>
   ```
 
 - 推送多个标签
 
-  ```ruby
+    ```ruby
   $ git push origin --tags
   ```
 
